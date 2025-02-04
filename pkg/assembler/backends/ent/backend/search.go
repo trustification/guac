@@ -287,27 +287,39 @@ func buildDependencyPath(resultSet map[uuid.UUID][]*ent.Dependency, current *uui
 	return result
 }
 
+// this need for creating the response with a specific positional array comes from previous implementation
+// of guac, i.e. 0.3.z branch, and the following integration into trustification and the willingness to not change
+// trustification.
+// Response array structure:
+// 1. CertifyVEXStatement or CertifyVuln
+// 2. Package (the affected one)
+// 3. IsDependency between previous Package (the dependency) and the next Package (the dependant)
+// 4. Package (dependant)
+// 5. IsDependency between previous Package (the dependency) and the next Package (the dependant)
+// 6. Package (dependant)
+// ...[more (IsDependency - Package) pairs]
+// n. Package with SBOM, i.e. Product
 func getResponse(certifyVexOrVuln model.Node, dependencyPaths [][]*ent.Dependency) [][]model.Node {
 	var result [][]model.Node
 	// each array of dependencies connects a vulnerable package with a product (i.e. package with an SBOM) the package belongs to
 	// so looping through the dependencies will ensure all the products are listed in the response
 	for _, dependencyPath := range dependencyPaths {
+		var response []model.Node
+		// the 1st expected element of each inner array is a CertifyVEXStatement or a CertifyVuln re to the vulnerabilityID
+		response = append(response, certifyVexOrVuln)
+		// inject the PackageVersion in order for the toModelPackage method to work
+		dependencyPath[0].Edges.DependentPackageVersion.Edges.Name.Edges.Versions = []*ent.PackageVersion{dependencyPath[0].Edges.DependentPackageVersion}
+		// the 2nd expected element of each inner array is the vulnerable Package
+		response = append(response, toModelPackage(dependencyPath[0].Edges.DependentPackageVersion.Edges.Name))
 		for _, dep := range dependencyPath {
-			var response []model.Node
-			// the 1st expected element of each inner array is a CertifyVEXStatement or a CertifyVuln re to the vulnerabilityID
-			response = append(response, certifyVexOrVuln)
-			// inject the PackageVersion in order for the toModelPackage method to work
-			dep.Edges.DependentPackageVersion.Edges.Name.Edges.Versions = []*ent.PackageVersion{dep.Edges.DependentPackageVersion}
-			// the 2nd expected element of each inner array is the vulnerable Package
-			response = append(response, toModelPackage(dep.Edges.DependentPackageVersion.Edges.Name))
 			// the 3rd expected element of each inner array is the IsDependency between the vulnerable package and its SBOM
 			response = append(response, toModelIsDependencyWithBackrefs(dep))
 			// inject the PackageVersion in order for the toModelPackage method to work
 			dep.Edges.Package.Edges.Name.Edges.Versions = []*ent.PackageVersion{dep.Edges.Package}
 			// the 4th expected element of each inner array is the SBOM Package
 			response = append(response, toModelPackage(dep.Edges.Package.Edges.Name))
-			result = append(result, response)
 		}
+		result = append(result, response)
 	}
 	return result
 }

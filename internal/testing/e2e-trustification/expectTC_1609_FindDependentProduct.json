@@ -5,38 +5,6 @@
       "type": "maven",
       "namespaces": [
         {
-          "namespace": "com.example",
-          "names": [
-            {
-              "name": "demo",
-              "versions": [
-                {
-                  "version": "0.0.1-SNAPSHOT",
-                  "qualifiers": [
-                    {
-                      "key": "type",
-                      "value": "jar"
-                    }
-                  ],
-                  "subpath": ""
-                }
-              ]
-            }
-          ]
-        }
-      ]
-    },
-    "uri": "urn:uuid:4dd9ce9a-b3f2-47c9-b670-a7884f29fd21",
-    "algorithm": "sha256",
-    "digest": "d2d350e6a166d24530297215b415a041cef1942394528bc8b625dd123a401341",
-    "collector": "FileCollector"
-  },
-  {
-    "subject": {
-      "__typename": "Package",
-      "type": "maven",
-      "namespaces": [
-        {
           "namespace": "com.redhat.quarkus.platform",
           "names": [
             {
@@ -65,6 +33,38 @@
     "uri": "https://access.redhat.com/security/data/sbom/beta/spdx/quarkus-bom-d6ecbbd9-31bf-46fd-afda-8082120f5260",
     "algorithm": "sha256",
     "digest": "4087ad9b170efe11192ff2dd28ec11c3c07e0d859dba42685d2665aa4086bcf8",
+    "collector": "FileCollector"
+  },
+  {
+    "subject": {
+      "__typename": "Package",
+      "type": "maven",
+      "namespaces": [
+        {
+          "namespace": "com.example",
+          "names": [
+            {
+              "name": "demo",
+              "versions": [
+                {
+                  "version": "0.0.1-SNAPSHOT",
+                  "qualifiers": [
+                    {
+                      "key": "type",
+                      "value": "jar"
+                    }
+                  ],
+                  "subpath": ""
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "uri": "urn:uuid:4dd9ce9a-b3f2-47c9-b670-a7884f29fd21",
+    "algorithm": "sha256",
+    "digest": "d2d350e6a166d24530297215b415a041cef1942394528bc8b625dd123a401341",
     "collector": "FileCollector"
   }
 ]

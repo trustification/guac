@@ -1,0 +1,163 @@
+{
+    "SPDXID": "SPDXRef-DOCUMENT",
+    "comment": "Licensing information is automatically generated from the upstream package meta data and may not be accurate.",
+    "creationInfo": {
+        "created": "2025-02-03T11:17:37Z",
+        "creators": [
+            "Organization: Red Hat Product Security (secalert@redhat.com)"
+        ],
+        "licenseListVersion": "3.22"
+    },
+    "dataLicense": "CC0-1.0",
+    "name": "RHEL-9.4.0.Z.MAIN+EUS",
+    "spdxVersion": "SPDX-2.3",
+    "documentNamespace": "https://access.redhat.com/security/data/sbom/spdx/RHEL-9.4.0.Z.MAIN+EUS",
+    "packages": [
+        {
+            "SPDXID": "SPDXRef-b1ac50af-1de4-48c7-850f-ddb05242561f",
+            "copyrightText": "NOASSERTION",
+            "downloadLocation": "https://repo.maven.apache.org/maven2/org/jdom/jdom/1.1",
+            "externalRefs": [
+                {
+                    "referenceCategory": "PACKAGE_MANAGER",
+                    "referenceLocator": "pkg:maven/org.jdom/jdom@1.1",
+                    "referenceType": "purl"
+                }
+            ],
+            "filesAnalyzed": false,
+            "homepage": "https://mvnrepository.com/artifact/org.jdom/jdom/1.1",
+            "licenseConcluded": "NOASSERTION",
+            "licenseDeclared": "NOASSERTION",
+            "name": "jdom",
+            "originator": "NOASSERTION",
+            "supplier": "Organization: Red Hat",
+            "versionInfo": "1.1"
+        },
+       {
+            "SPDXID": "SPDXRef-98c61161-9ced-4363-b63d-4a21a93ffc31",
+            "copyrightText": "NOASSERTION",
+            "downloadLocation": "https://access.redhat.com/downloads/content/package-browser",
+            "externalRefs": [
+                {
+                    "referenceCategory": "PACKAGE_MANAGER",
+                    "referenceLocator": "pkg:rpm/redhat/maven-plugin-bundle@5.1.1-5.el9?arch=src",
+                    "referenceType": "purl"
+                },
+                {
+                    "referenceCategory": "SECURITY",
+                    "referenceLocator": "cpe:/a:redhat:enterprise_linux:9::crb",
+                    "referenceType": "cpe22Type"
+                },
+                {
+                    "referenceCategory": "SECURITY",
+                    "referenceLocator": "cpe:/a:redhat:rhel_eus:9.0::crb",
+                    "referenceType": "cpe22Type"
+                },
+                {
+                    "referenceCategory": "SECURITY",
+                    "referenceLocator": "cpe:/a:redhat:rhel_eus:9.2::crb",
+                    "referenceType": "cpe22Type"
+                }
+            ],
+            "filesAnalyzed": false,
+            "licenseConcluded": "NOASSERTION",
+            "licenseDeclared": "LicenseRef-4",
+            "name": "maven-plugin-bundle",
+            "originator": "NOASSERTION",
+            "packageFileName": "maven-plugin-bundle-5.1.1-5.el9.src.rpm",
+            "supplier": "Organization: Red Hat",
+            "versionInfo": "5.1.1-5.el9"
+        },
+        {
+            "SPDXID": "SPDXRef-56f35668-a02d-4c8a-ace9-f846159d3e61",
+            "copyrightText": "NOASSERTION",
+            "downloadLocation": "NOASSERTION",
+            "externalRefs": [
+                {
+                    "referenceCategory": "SECURITY",
+                    "referenceLocator": "cpe:/o:redhat:enterprise_linux:9::hypervisor",
+                    "referenceType": "cpe22Type"
+                },
+                {
+                    "referenceCategory": "SECURITY",
+                    "referenceLocator": "cpe:/a:redhat:enterprise_linux:9::resilientstorage",
+                    "referenceType": "cpe22Type"
+                },
+                {
+                    "referenceCategory": "SECURITY",
+                    "referenceLocator": "cpe:/a:redhat:enterprise_linux:9::sap",
+                    "referenceType": "cpe22Type"
+                },
+                {
+                    "referenceCategory": "SECURITY",
+                    "referenceLocator": "cpe:/a:redhat:enterprise_linux:9::supplementary",
+                    "referenceType": "cpe22Type"
+                },
+                {
+                    "referenceCategory": "SECURITY",
+                    "referenceLocator": "cpe:/a:redhat:enterprise_linux:9::crb",
+                    "referenceType": "cpe22Type"
+                },
+                {
+                    "referenceCategory": "SECURITY",
+                    "referenceLocator": "cpe:/a:redhat:enterprise_linux:9::highavailability",
+                    "referenceType": "cpe22Type"
+                },
+                {
+                    "referenceCategory": "SECURITY",
+                    "referenceLocator": "cpe:/a:redhat:enterprise_linux:9::appstream",
+                    "referenceType": "cpe22Type"
+                },
+                {
+                    "referenceCategory": "SECURITY",
+                    "referenceLocator": "cpe:/o:redhat:enterprise_linux:9::baseos",
+                    "referenceType": "cpe22Type"
+                },
+                {
+                    "referenceCategory": "SECURITY",
+                    "referenceLocator": "cpe:/a:redhat:enterprise_linux:9::sap_hana",
+                    "referenceType": "cpe22Type"
+                },
+                {
+                    "referenceCategory": "SECURITY",
+                    "referenceLocator": "cpe:/a:redhat:enterprise_linux:9::realtime",
+                    "referenceType": "cpe22Type"
+                },
+                {
+                    "referenceCategory": "SECURITY",
+                    "referenceLocator": "cpe:/a:redhat:enterprise_linux:9::nfv",
+                    "referenceType": "cpe22Type"
+                },
+                {
+                    "referenceCategory": "SECURITY",
+                    "referenceLocator": "cpe:/o:redhat:enterprise_linux:9::fastdatapath",
+                    "referenceType": "cpe22Type"
+                }
+            ],
+            "filesAnalyzed": false,
+            "homepage": "https://www.redhat.com/",
+            "licenseConcluded": "NOASSERTION",
+            "licenseDeclared": "NOASSERTION",
+            "name": "RHEL-9.4.0.Z.MAIN+EUS",
+            "supplier": "Organization: Red Hat",
+            "versionInfo": "9.4.0"
+        }
+    ],
+    "relationships": [
+        {
+            "spdxElementId": "SPDXRef-b1ac50af-1de4-48c7-850f-ddb05242561f",
+            "relatedSpdxElement": "SPDXRef-98c61161-9ced-4363-b63d-4a21a93ffc31",
+            "relationshipType": "CONTAINED_BY"
+        },
+        {
+            "spdxElementId": "SPDXRef-98c61161-9ced-4363-b63d-4a21a93ffc31",
+            "relatedSpdxElement": "SPDXRef-56f35668-a02d-4c8a-ace9-f846159d3e61",
+            "relationshipType": "PACKAGE_OF"
+        },
+        {
+            "spdxElementId": "SPDXRef-DOCUMENT",
+            "relatedSpdxElement": "SPDXRef-56f35668-a02d-4c8a-ace9-f846159d3e61",
+            "relationshipType": "DESCRIBES"
+        }
+    ]
+}

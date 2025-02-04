@@ -1,0 +1,205 @@
+[
+  {
+    "package": {
+      "type": "maven",
+      "namespaces": [
+        {
+          "namespace": "org.jdom",
+          "names": [
+            {
+              "name": "jdom",
+              "versions": [
+                {
+                  "version": "1.1",
+                  "qualifiers": [],
+                  "subpath": ""
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "vulnerability": {
+      "type": "osv",
+      "vulnerabilityIDs": [
+        {
+          "vulnerabilityID": "ghsa-2363-cqg2-863c"
+        }
+      ]
+    },
+    "metadata": {
+      "dbUri": "test",
+      "dbVersion": "0.0.0",
+      "scannerUri": "test",
+      "scannerVersion": "0.0.0",
+      "timeScanned": "2025-02-04T11:03:06Z",
+      "collector": "test"
+    }
+  },
+  {
+    "type": "maven",
+    "namespaces": [
+      {
+        "namespace": "org.jdom",
+        "names": [
+          {
+            "name": "jdom",
+            "versions": [
+              {
+                "version": "1.1",
+                "qualifiers": [],
+                "subpath": ""
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "justification": "Derived from SPDX CONTAINED_BY relationship",
+    "versionRange": "1.1",
+    "package": {
+      "type": "rpm",
+      "namespaces": [
+        {
+          "namespace": "redhat",
+          "names": [
+            {
+              "name": "maven-plugin-bundle",
+              "versions": [
+                {
+                  "version": "5.1.1-5.el9",
+                  "qualifiers": [
+                    {
+                      "key": "arch",
+                      "value": "src"
+                    }
+                  ],
+                  "subpath": ""
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "dependencyPackage": {
+      "type": "maven",
+      "namespaces": [
+        {
+          "namespace": "org.jdom",
+          "names": [
+            {
+              "name": "jdom",
+              "versions": [
+                {
+                  "version": "1.1",
+                  "qualifiers": [],
+                  "subpath": ""
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "collector": "FileCollector"
+  },
+  {
+    "type": "rpm",
+    "namespaces": [
+      {
+        "namespace": "redhat",
+        "names": [
+          {
+            "name": "maven-plugin-bundle",
+            "versions": [
+              {
+                "version": "5.1.1-5.el9",
+                "qualifiers": [
+                  {
+                    "key": "arch",
+                    "value": "src"
+                  }
+                ],
+                "subpath": ""
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "justification": "Derived from SPDX PACKAGE_OF relationship",
+    "versionRange": "5.1.1-5.el9",
+    "package": {
+      "type": "guac",
+      "namespaces": [
+        {
+          "namespace": "pkg",
+          "names": [
+            {
+              "name": "RHEL-9.4.0.Z.MAIN+EUS",
+              "versions": [
+                {
+                  "version": "9.4.0",
+                  "qualifiers": [],
+                  "subpath": ""
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "dependencyPackage": {
+      "type": "rpm",
+      "namespaces": [
+        {
+          "namespace": "redhat",
+          "names": [
+            {
+              "name": "maven-plugin-bundle",
+              "versions": [
+                {
+                  "version": "5.1.1-5.el9",
+                  "qualifiers": [
+                    {
+                      "key": "arch",
+                      "value": "src"
+                    }
+                  ],
+                  "subpath": ""
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "collector": "FileCollector"
+  },
+  {
+    "type": "guac",
+    "namespaces": [
+      {
+        "namespace": "pkg",
+        "names": [
+          {
+            "name": "RHEL-9.4.0.Z.MAIN+EUS",
+            "versions": [
+              {
+                "version": "9.4.0",
+                "qualifiers": [],
+                "subpath": ""
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+]

@@ -502,3 +502,57 @@ query TC_1928_FindVulnerabilityBySbomURI {
     }
   }
 }
+
+mutation TC_2220_OSV_GHSA_vulnerability{
+  ingestVulnerability (
+    vuln: {
+      vulnerabilityInput : {
+        type: "osv"
+        vulnerabilityID: "GHSA-2363-cqg2-863c"
+      }
+    }
+  ){vulnerabilityNodeID}
+}
+
+mutation TC_2220_OSV_GHSA_certify_vuln {
+  ingestCertifyVuln(
+    pkg: {
+      packageInput: {
+        type: "maven"
+        namespace: "org.jdom"
+        name: "jdom"
+        version: "1.1"
+      }
+    }
+    vulnerability: {
+      vulnerabilityInput: {
+        type: "osv"
+        vulnerabilityID: "GHSA-2363-cqg2-863c"
+      }
+    }
+    certifyVuln: {
+      timeScanned: "2025-02-04T11:03:05.999999999Z"
+      dbUri: "test"
+      dbVersion: "0.0.0"
+      scannerUri: "test"
+      scannerVersion: "0.0.0"
+      origin: "test"
+      collector: "test"
+      documentRef: "test"
+    }
+  )
+}
+
+query TC_2220_find_product_by_cve {
+  findTopLevelPackagesRelatedToVulnerability(vulnerabilityID: "ghsa-2363-cqg2-863c") {
+    ... on CertifyVuln {
+      ...allCertifyVulnTree
+    }
+    ... on Package {
+      ...allPkgTree
+    }
+    ... on IsDependency {
+      ...allIsDependencyTree
+    }
+  }
+}
