@@ -248,7 +248,7 @@ require (
 	github.com/segmentio/kafka-go v0.4.47
 	github.com/segmentio/ksuid v1.0.4
 	github.com/sigstore/sigstore v1.8.1
-	github.com/spdx/tools-golang v0.5.3
+	github.com/spdx/tools-golang v0.5.5
 	github.com/spf13/viper v1.18.2
 	github.com/stretchr/testify v1.9.0
 	github.com/vektah/gqlparser/v2 v2.5.14
