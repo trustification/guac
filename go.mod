@@ -22,7 +22,7 @@ require (
 	github.com/golang/groupcache v0.0.0-20210331224755-41bb18bfe9da // indirect
 	github.com/golang/protobuf v1.5.3 // indirect
 	github.com/google/go-cmp v0.6.0
-	github.com/google/uuid v1.5.0 // indirect
+	github.com/google/uuid v1.6.0 // indirect
 	github.com/googleapis/enterprise-certificate-proxy v0.3.2 // indirect
 	github.com/googleapis/gax-go/v2 v2.12.0 // indirect
 	github.com/gorilla/handlers v1.5.2 // indirect
@@ -33,12 +33,12 @@ require (
 	github.com/spf13/pflag v1.0.5
 	go.opencensus.io v0.24.0 // indirect
 	go.uber.org/multierr v1.11.0 // indirect
-	golang.org/x/crypto v0.21.0 // indirect
-	golang.org/x/net v0.23.0 // indirect
+	golang.org/x/crypto v0.31.0 // indirect
+	golang.org/x/net v0.33.0 // indirect
 	golang.org/x/oauth2 v0.16.0
-	golang.org/x/sync v0.6.0
-	golang.org/x/sys v0.18.0 // indirect
-	golang.org/x/text v0.14.0 // indirect
+	golang.org/x/sync v0.10.0
+	golang.org/x/sys v0.28.0 // indirect
+	golang.org/x/text v0.21.0 // indirect
 	golang.org/x/xerrors v0.0.0-20231012003039-104605ab7028 // indirect
 	google.golang.org/appengine v1.6.8 // indirect
 	google.golang.org/genproto v0.0.0-20240102182953-50ed04b92917 // indirect
@@ -129,7 +129,7 @@ require (
 	github.com/logrusorgru/aurora/v3 v3.0.0 // indirect
 	github.com/magiconair/properties v1.8.7 // indirect
 	github.com/mattn/go-colorable v0.1.13 // indirect
-	github.com/mattn/go-isatty v0.0.19 // indirect
+	github.com/mattn/go-isatty v0.0.20 // indirect
 	github.com/mattn/go-runewidth v0.0.15 // indirect
 	github.com/matttproud/golang_protobuf_extensions/v2 v2.0.0 // indirect
 	github.com/minio/highwayhash v1.0.2 // indirect
@@ -190,10 +190,10 @@ require (
 	go.opentelemetry.io/otel/metric v1.21.0 // indirect
 	go.opentelemetry.io/otel/trace v1.21.0 // indirect
 	gocloud.dev v0.36.0 // indirect
-	golang.org/x/mod v0.14.0 // indirect
-	golang.org/x/term v0.18.0 // indirect
+	golang.org/x/mod v0.17.0 // indirect
+	golang.org/x/term v0.27.0 // indirect
 	golang.org/x/time v0.5.0 // indirect
-	golang.org/x/tools v0.15.0 // indirect
+	golang.org/x/tools v0.21.1-0.20240508182429-e35e4ccd0d2d // indirect
 	golang.org/x/vuln v1.0.1 // indirect
 	google.golang.org/genproto/googleapis/api v0.0.0-20240102182953-50ed04b92917 // indirect
 	google.golang.org/genproto/googleapis/rpc v0.0.0-20240116215550-a9fa1716bcac // indirect
@@ -214,7 +214,7 @@ require (
 	github.com/DATA-DOG/go-txdb v0.1.8
 	github.com/Khan/genqlient v0.6.0
 	github.com/Masterminds/semver v1.5.0
-	github.com/arangodb/go-driver v1.6.1
+	github.com/arangodb/go-driver v1.6.6
 	github.com/aws/aws-sdk-go v1.49.17
 	github.com/aws/aws-sdk-go-v2 v1.24.1
 	github.com/aws/aws-sdk-go-v2/config v1.26.6
