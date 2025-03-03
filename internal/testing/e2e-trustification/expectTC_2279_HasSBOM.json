@@ -1,0 +1,35 @@
+[
+  {
+    "algorithm": "sha256",
+    "collector": "FileCollector",
+    "digest": "48ebca5b334f35777186a7ac620aadb15d4614edf833df8ff60874e0804cb6e5",
+    "subject": {
+      "__typename": "Artifact",
+      "algorithm": "md5",
+      "digest": "8fe22e8ba9342219816f8e56ad857ec9"
+    },
+    "uri": "urn:uuid:1eaf0d87-cc63-4bfe-a02f-d719e270b0b4"
+  },
+  {
+    "algorithm": "sha256",
+    "collector": "FileCollector",
+    "digest": "48ebca5b334f35777186a7ac620aadb15d4614edf833df8ff60874e0804cb6e5",
+    "subject": {
+      "__typename": "Artifact",
+      "algorithm": "sha-1",
+      "digest": "a0c25271f5081419db2d9f4093c9214160589a5d"
+    },
+    "uri": "urn:uuid:1eaf0d87-cc63-4bfe-a02f-d719e270b0b4"
+  },
+  {
+    "algorithm": "sha256",
+    "collector": "FileCollector",
+    "digest": "48ebca5b334f35777186a7ac620aadb15d4614edf833df8ff60874e0804cb6e5",
+    "subject": {
+      "__typename": "Artifact",
+      "algorithm": "sha-256",
+      "digest": "e9343214b79c9014737bf07ec61a98838a2e40b00561d743f601f0ede583131e"
+    },
+    "uri": "urn:uuid:1eaf0d87-cc63-4bfe-a02f-d719e270b0b4"
+  }
+]

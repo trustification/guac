@@ -334,7 +334,13 @@ func hasSBOMQuery(spec model.HasSBOMSpec) predicate.BillOfMaterials {
 
 	if spec.Subject != nil {
 		if spec.Subject.Package != nil {
-			predicates = append(predicates, billofmaterials.HasPackageWith(packageVersionQuery(spec.Subject.Package)))
+			predicates = append(predicates, billofmaterials.Or(
+				billofmaterials.HasPackageWith(packageVersionQuery(spec.Subject.Package)),
+				// https://issues.redhat.com/browse/TC-2279
+				// When an SBOM has hashes for the top level packages, the SBOM itself is "attached" to artifacts by hashes
+				// rather than the top level packages' PURLs hence once a hasSBOM is queried by Package
+				// a condition must be added to find it through the artifact related to the package
+				billofmaterials.HasArtifactWith(artifact.HasOccurrencesWith(occurrence.HasPackageWith(packageVersionQuery(spec.Subject.Package))))))
 		} else if spec.Subject.Artifact != nil {
 			predicates = append(predicates, billofmaterials.HasArtifactWith(artifactQueryPredicates(spec.Subject.Artifact)))
 		}

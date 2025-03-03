@@ -1,0 +1,120 @@
+{
+  "bomFormat": "CycloneDX",
+  "metadata": {
+    "component": {
+      "bom-ref": "pkg:maven/org.eclipse.che/che-server@7.92.1.redhat-00004?type=pom",
+      "description": "Eclipse Che Server",
+      "externalReferences": [
+        {
+          "type": "vcs",
+          "url": "https://github.com/eclipse/che"
+        },
+        {
+          "type": "distribution",
+          "url": "https://maven.repository.redhat.com/ga/"
+        }
+      ],
+      "group": "org.eclipse.che",
+      "hashes": [
+        {
+          "alg": "MD5",
+          "content": "8fe22e8ba9342219816f8e56ad857ec9"
+        },
+        {
+          "alg": "SHA-1",
+          "content": "a0c25271f5081419db2d9f4093c9214160589a5d"
+        },
+        {
+          "alg": "SHA-256",
+          "content": "e9343214b79c9014737bf07ec61a98838a2e40b00561d743f601f0ede583131e"
+        }
+      ],
+      "licenses": [
+        {
+          "license": {
+            "id": "EPL-2.0",
+            "url": "https://www.eclipse.org/legal/epl-2.0"
+          }
+        }
+      ],
+      "name": "che-server",
+      "pedigree": {
+        "commits": [
+          {
+            "uid": "2ef28f45700089f95e18e31e65696f438b68a5c5",
+            "url": "https://gitlab.cee.redhat.com/pnc-workspace/eclipse-che/che-server.git#7.92.1.redhat-00004"
+          },
+          {
+            "uid": "b99673bda276773c6d5ad87ba9d60c08d900e8b8",
+            "url": "https://github.com/eclipse-che/che-server#7.92.x"
+          }
+        ]
+      },
+      "publisher": "Red Hat",
+      "purl": "pkg:maven/org.eclipse.che/che-server@7.92.1.redhat-00004?type=pom",
+      "supplier": {
+        "name": "Red Hat",
+        "url": [
+          "https://www.redhat.com"
+        ]
+      },
+      "type": "library",
+      "version": "7.92.1.redhat-00004"
+    },
+    "properties": [
+      {
+        "name": "maven.goal",
+        "value": "makeAggregateBom"
+      },
+      {
+        "name": "maven.scopes",
+        "value": "compile,provided,runtime,system"
+      }
+    ],
+    "timestamp": "2024-10-28T21:58:47Z",
+    "tools": [
+      {
+        "hashes": [
+          {
+            "alg": "MD5",
+            "content": "8e595cdb67f17e4b41e046456970591d"
+          },
+          {
+            "alg": "SHA-1",
+            "content": "69e8ca804520d09ce4657e7235bae84d01cbffa6"
+          },
+          {
+            "alg": "SHA-256",
+            "content": "aa09074fe5aa403c008cd4fc7ef8ce41cd244489337f16b3e91a3914158a4db8"
+          },
+          {
+            "alg": "SHA-512",
+            "content": "1488a8112da8e675813d7585f57c5efb178aed32901118186ee12d0e4ae3d19c53774c7f860bf70d17d70f050119b69443a2637cf641675b4b5d9cdcdd69b89b"
+          },
+          {
+            "alg": "SHA-384",
+            "content": "b097295dfbf10887abc6eec58d4d0822cde5a73d1f5c1cf183a57bf569016ad5ced9d34efae3e574d82bb62837540c6c"
+          },
+          {
+            "alg": "SHA3-384",
+            "content": "289f9520bd73a2031276248a6ef8f0891c691062c2d1ea86a2bc9ea8db2c52377d92a53be9957179e71aee3deda26a8c"
+          },
+          {
+            "alg": "SHA3-256",
+            "content": "32b50a7efe5d491a4039c0017eca3cf49d98b55fc66d06b3dd06209487323474"
+          },
+          {
+            "alg": "SHA3-512",
+            "content": "1daf813da53e5d5cda4d0302ff3a5e388aa45d96ebe6dcbe240f35d33f14b1e6390f6bbe7f21f3ed8cf96ebd9f5516a08b18487b7339715109c81cebfc1563df"
+          }
+        ],
+        "name": "CycloneDX Maven plugin",
+        "vendor": "OWASP Foundation",
+        "version": "2.7.9"
+      }
+    ]
+  },
+  "serialNumber": "urn:uuid:1eaf0d87-cc63-4bfe-a02f-d719e270b0b4",
+  "specVersion": "1.4",
+  "version": 1
+}

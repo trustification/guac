@@ -191,4 +191,11 @@ echo @@@@ Running TC-2280 queries
 cat "$queries" | gql-cli http://localhost:8080/query -o TC_2280_find_product_by_cve | jq 'del(.. | .id?) | del(.. | .origin?) | .findTopLevelPackagesRelatedToVulnerability[] ' > "${GUAC_DIR}/gotTC_2280_FindProductByCVE.json"
 diff -u "${SCRIPT_DIR}/expectTC_2280_FindProductByCVE.json" "${GUAC_DIR}/gotTC_2280_FindProductByCVE.json"
 
+echo @@@@ Ingesting data for TC-2279
+time go run ./cmd/guacone collect files ${GUAC_DIR}/internal/testing/testdata/exampledata/TC-2279_sbom.json;
+
+echo @@@@ Running TC-2279 queries
+cat "$queries" | gql-cli http://localhost:8080/query -o TC_2279_HasSBOM | jq --sort-keys 'del(.. | .id?) | del(.. | .downloadLocation?) | del(.. | .origin?) | .HasSBOM | sort_by(.subject.digest) ' > "${GUAC_DIR}/gotTC_2279_HasSBOM.json"
+diff -u "${SCRIPT_DIR}/expectTC_2279_HasSBOM.json" "${GUAC_DIR}/gotTC_2279_HasSBOM.json"
+
 # Note: graphql_playground is left running, CI will clean it up
