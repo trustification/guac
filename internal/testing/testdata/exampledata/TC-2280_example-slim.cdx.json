@@ -1,0 +1,366 @@
+{
+  "bomFormat": "CycloneDX",
+  "specVersion": "1.4",
+  "serialNumber": "urn:uuid:81ca43fe-07a1-35d2-b18d-ee52ad97342e",
+  "version": 1,
+  "metadata": {
+    "component": {
+      "bom-ref": "pkg:maven/org.apache.camel.springboot.example/examples@4.8.0.redhat-00001?type=pom",
+      "description": "Camel Examples",
+      "externalReferences": [
+        {
+          "type": "website",
+          "url": "https://camel.apache.org/examples"
+        },
+        {
+          "type": "distribution",
+          "url": "https://repository.apache.org/service/local/staging/deploy/maven2"
+        },
+        {
+          "type": "issue-tracker",
+          "url": "https://issues.apache.org/jira/browse/CAMEL"
+        },
+        {
+          "type": "mailing-list",
+          "url": "dev-subscribe@camel.apache.org"
+        },
+        {
+          "type": "vcs",
+          "url": "https://github.com/apache/camel-spring-boot-examples"
+        }
+      ],
+      "group": "org.apache.camel.springboot.example",
+      "licenses": [
+        {
+          "license": {
+            "id": "Apache-2.0",
+            "url": "https://www.apache.org/licenses/LICENSE-2.0"
+          }
+        }
+      ],
+      "name": "examples",
+      "publisher": "The Apache Software Foundation",
+      "purl": "pkg:maven/org.apache.camel.springboot.example/examples@4.8.0.redhat-00001?type=pom",
+      "type": "library",
+      "version": "4.8.0.redhat-00001"
+    },
+    "properties": [
+      {
+        "name": "maven.goal",
+        "value": "makeAggregateBom"
+      },
+      {
+        "name": "maven.scopes",
+        "value": "compile,provided,runtime,system"
+      },
+      {
+        "name": "maven.reproducible",
+        "value": "enabled"
+      }
+    ],
+    "timestamp": "2024-12-02T15:28:14Z",
+    "tools": [
+      {
+        "name": "CycloneDX Maven plugin",
+        "vendor": "OWASP Foundation",
+        "version": "2.7.9"
+      }
+    ]
+  },
+  "components": [
+    {
+      "bom-ref": "pkg:maven/org.yaml/snakeyaml@1.23?classifier=android&type=jar",
+      "description": "YAML 1.1 parser and emitter for Java",
+      "externalReferences": [
+        {
+          "type": "website",
+          "url": "http://www.snakeyaml.org"
+        },
+        {
+          "type": "distribution",
+          "url": "https://oss.sonatype.org/service/local/staging/deploy/maven2/"
+        },
+        {
+          "type": "issue-tracker",
+          "url": "https://bitbucket.org/asomov/snakeyaml/issues"
+        },
+        {
+          "type": "vcs",
+          "url": "https://bitbucket.org/asomov/snakeyaml/src"
+        }
+      ],
+      "group": "org.yaml",
+      "hashes": [
+        {
+          "alg": "MD5",
+          "content": "ea24097928071dadfabafe6e59d7e7ed"
+        },
+        {
+          "alg": "SHA-1",
+          "content": "e8520d52edca3d8dc0f366cff520fb4498ec8a5f"
+        },
+        {
+          "alg": "SHA-256",
+          "content": "c0f7a90628172970d3ff6d7eaa7a04f73b57290b3b8dba916c8281a76f2214ca"
+        },
+        {
+          "alg": "SHA-512",
+          "content": "684fec4ac89559b572ff397f4f260a605a7860a28fec1e4670ebb288c03a06e063727b967ec4cc1597436a9edd7928265942653a379b8b0300a0d1176ae68254"
+        },
+        {
+          "alg": "SHA-384",
+          "content": "eb824bfb39b631e395761287607bda289600aa5a25cdff3caaf98878d01578afa9dc3b4c9f05455bdbda8183db3a064a"
+        },
+        {
+          "alg": "SHA3-384",
+          "content": "22e2d4bb9439d95dfdf864ef3c2c7bb51e38541675b5004b0f500f6ac8250da28d3e47e3a4cfdf35cd7b0b5187c5147d"
+        },
+        {
+          "alg": "SHA3-256",
+          "content": "f4232ac14cd7501a5330d23546133f0bd97d4d41ce81358e81a6a5133377f1da"
+        },
+        {
+          "alg": "SHA3-512",
+          "content": "465e2c7ba3f150b0e39c40d64a5ee3ab2f26521ba993824311e9af8cb80ac82eee9e51b32137ab682a23a0a7dfca037b9ec9f2d5a8f3f2d43d6e67f8966195ee"
+        }
+      ],
+      "licenses": [
+        {
+          "license": {
+            "id": "Apache-2.0"
+          }
+        }
+      ],
+      "name": "snakeyaml",
+      "purl": "pkg:maven/org.yaml/snakeyaml@1.23?classifier=android&type=jar",
+      "scope": "required",
+      "type": "library",
+      "version": "1.23"
+    },
+    {
+      "bom-ref": "pkg:maven/com.github.javafaker/javafaker@1.0.2?type=jar",
+      "description": "This library is a port of Ruby's stympy/faker gem (as well as Perl's Data::Faker library) that generates fake data. It's useful when you're developing a new project and need some pretty data for showcase.",
+      "externalReferences": [
+        {
+          "type": "website",
+          "url": "http://github.com/DiUS/java-faker"
+        },
+        {
+          "type": "distribution",
+          "url": "https://oss.sonatype.org/service/local/staging/deploy/maven2/"
+        },
+        {
+          "type": "vcs",
+          "url": "git://github.com/DiUS/java-faker.git"
+        },
+        {
+          "comment": "pnc-artifact-id",
+          "type": "build-system",
+          "url": "https://orch.pnc.engineering.redhat.com/pnc-rest/v2/artifacts/10746265"
+        }
+      ],
+      "group": "com.github.javafaker",
+      "hashes": [
+        {
+          "alg": "MD5",
+          "content": "d20c2dac0220b1943c2fbe6211f14d10"
+        },
+        {
+          "alg": "SHA-1",
+          "content": "be0ff271b1208416822db4438864df47f90af92f"
+        },
+        {
+          "alg": "SHA-256",
+          "content": "ef95ae468097f378880be69a8c6756f8d15180e0f07547fb0a99617ff421b2ac"
+        },
+        {
+          "alg": "SHA-512",
+          "content": "a03c58e20dab320c6fbee5a6c20f7c57d1a603a0aeb02e8b62230deacb0250a6e6f51fe40188951c3e7f8e4e9a5e3f4bbc00585d3edd325e57e119d32a29b1fc"
+        },
+        {
+          "alg": "SHA-384",
+          "content": "69c78000e1c3493859182d97207070b6db050aed5148915405e1e0f7cb845f2a0d8ad1f15383d0e7dedd9ed6d8d76bf6"
+        },
+        {
+          "alg": "SHA3-384",
+          "content": "7cbc25bab23fe5f6bdf50402aaa377f0faecfb1f46ac59c956c63c830c3971f494557a18695d6e4d7d171dcc68402816"
+        },
+        {
+          "alg": "SHA3-256",
+          "content": "cefc5b7c660e1227afed38551e77a9dd229bf1e0c1754eb01b3318b725ba9877"
+        },
+        {
+          "alg": "SHA3-512",
+          "content": "35e979afe9962b7568eab8496a24b6cb670ecf05e509f0b2365a284f61bb19440da9fe0990bb68f157ff6d47eadeba072c223fb2ea5186726dee03f09aed85b1"
+        }
+      ],
+      "licenses": [
+        {
+          "license": {
+            "id": "Apache-2.0"
+          }
+        }
+      ],
+      "name": "javafaker",
+      "purl": "pkg:maven/com.github.javafaker/javafaker@1.0.2?type=jar",
+      "scope": "required",
+      "type": "library",
+      "version": "1.0.2"
+    },
+    {
+      "bom-ref": "pkg:maven/org.apache.camel.springboot.example/camel-example-spring-boot-kafka-avro@4.8.0.redhat-00001?type=jar",
+      "description": "An example for Kafka avro",
+      "externalReferences": [
+        {
+          "type": "website",
+          "url": "https://camel.apache.org/examples/camel-example-spring-boot-kafka-avro"
+        },
+        {
+          "type": "distribution",
+          "url": "https://repository.apache.org/service/local/staging/deploy/maven2"
+        },
+        {
+          "type": "issue-tracker",
+          "url": "https://issues.apache.org/jira/browse/CAMEL"
+        },
+        {
+          "type": "mailing-list",
+          "url": "dev-subscribe@camel.apache.org"
+        },
+        {
+          "type": "vcs",
+          "url": "https://gitbox.apache.org/repos/asf?p=camel-spring-boot.git;a=summary/examples/camel-example-spring-boot-kafka-avro"
+        }
+      ],
+      "group": "org.apache.camel.springboot.example",
+      "licenses": [
+        {
+          "license": {
+            "id": "Apache-2.0",
+            "url": "https://www.apache.org/licenses/LICENSE-2.0"
+          }
+        }
+      ],
+      "name": "camel-example-spring-boot-kafka-avro",
+      "publisher": "The Apache Software Foundation",
+      "purl": "pkg:maven/org.apache.camel.springboot.example/camel-example-spring-boot-kafka-avro@4.8.0.redhat-00001?type=jar",
+      "type": "library",
+      "version": "4.8.0.redhat-00001"
+    },
+    {
+      "bom-ref": "pkg:maven/org.apache.camel.springboot/spring-boot@4.8.0.redhat-00022?type=pom",
+      "externalReferences": [
+        {
+          "type": "distribution",
+          "url": "https://maven.repository.redhat.com/ga/"
+        },
+        {
+          "comment": "pnc-artifact-id",
+          "type": "build-system",
+          "url": "https://orch.pnc.engineering.redhat.com/pnc-rest/v2/artifacts/13234785"
+        },
+        {
+          "comment": "pnc-build-id",
+          "type": "build-system",
+          "url": "https://orch.pnc.engineering.redhat.com/pnc-rest/v2/builds/BEA2PBKQNBAAC"
+        },
+        {
+          "comment": "pnc-environment-image",
+          "type": "build-meta",
+          "url": "quay.io/rh-newcastle/builder-rhel-8-j17-mvn3.9.1:1.0.2"
+        },
+        {
+          "comment": "",
+          "type": "vcs",
+          "url": "ssh://git@github.com/jboss-fuse/camel-spring-boot.git"
+        }
+      ],
+      "group": "org.apache.camel.springboot",
+      "hashes": [
+        {
+          "alg": "MD5",
+          "content": "8e4a0f66e976dc4b61d470008b659c46"
+        },
+        {
+          "alg": "SHA-1",
+          "content": "3b475d18208f7d675d83f1337cc1ce07fc9bc258"
+        },
+        {
+          "alg": "SHA-256",
+          "content": "feeb79331465ee7c1215c36ca7162a0eff0596742cc0a4e3d34d6a1e9f1e3b23"
+        },
+        {
+          "alg": "SHA-512",
+          "content": "ee2ae7dc61530d7b058c3cbb804ad2691a8ec089b3fb463710f26ea84da5f49302fe296696a035a5bcc827911ab1de1aa71d6d5ad95327b574491426263f7184"
+        },
+        {
+          "alg": "SHA-384",
+          "content": "225e1f6b9d7b8ac32619e175a07974b3a0983f88c9ed593e8bd10f00713c8e103389b3e1263c8062984baac7c717451b"
+        },
+        {
+          "alg": "SHA3-384",
+          "content": "b8fb2e14dffc4294ccce649c19f148aaa98b987ab0e7058d6f387d66e097cd8064f61312a40b751afa695860147d9e12"
+        },
+        {
+          "alg": "SHA3-256",
+          "content": "eb9d724107a5899039a13f3a7179af756e22b57b8ff2c3ae8b909d9728760039"
+        },
+        {
+          "alg": "SHA3-512",
+          "content": "ad6ba82cbe7e5cae072e1750f4f87fc1bf0e1fa88184faf83fd43774ab95852fd52f66f943d162c74d4d1ec2007da8fd1727124fa3edba795744078e46e53654"
+        }
+      ],
+      "name": "spring-boot",
+      "pedigree": {
+        "commits": [
+          {
+            "uid": "7623e383d3c70780e0bf7438dcf0aa218e2a7df6",
+            "url": "https://gitlab.cee.redhat.com/pnc-workspace/jboss-fuse/camel-spring-boot.git#4.8.0.redhat-00022"
+          },
+          {
+            "uid": "d5978c1a6f8378ebe185ecb255eca34ae5db745a",
+            "url": "ssh://git@github.com/jboss-fuse/camel-spring-boot.git#camel-spring-boot-4.8.0-branch"
+          }
+        ]
+      },
+      "publisher": "Red Hat",
+      "purl": "pkg:maven/org.apache.camel.springboot/spring-boot@4.8.0.redhat-00022?type=pom",
+      "scope": "required",
+      "supplier": {
+        "name": "Red Hat",
+        "url": [
+          "https://www.redhat.com"
+        ]
+      },
+      "type": "library",
+      "version": "4.8.0.redhat-00022"
+    }
+  ],
+  "dependencies": [
+    {
+      "dependsOn": [
+        "pkg:maven/org.yaml/snakeyaml@1.23?classifier=android&type=jar"
+      ],
+      "ref": "pkg:maven/com.github.javafaker/javafaker@1.0.2?type=jar"
+    },
+    {
+      "dependsOn": [
+        "pkg:maven/com.github.javafaker/javafaker@1.0.2?type=jar",
+        "pkg:maven/org.apache.camel.springboot/spring-boot@4.8.0.redhat-00022?type=pom"
+      ],
+      "ref": "pkg:maven/org.apache.camel.springboot.example/camel-example-spring-boot-kafka-avro@4.8.0.redhat-00001?type=jar"
+    },
+    {
+      "dependsOn": [
+        "pkg:maven/org.apache.camel.springboot.example/camel-example-spring-boot-kafka-avro@4.8.0.redhat-00001?type=jar"
+      ],
+      "ref": "pkg:maven/org.apache.camel.springboot.example/examples@4.8.0.redhat-00001?type=pom"
+    },
+    {
+      "dependsOn": [
+        "pkg:maven/org.apache.camel.springboot.example/examples@4.8.0.redhat-00001?type=pom"
+      ],
+      "ref": "pkg:maven/org.apache.camel.springboot/spring-boot@4.8.0.redhat-00022?type=pom"
+    }
+  ]
+}

@@ -204,13 +204,19 @@ func (b *EntBackend) recursivelyFindPathFromPackageToProduct(ctx context.Context
 						sql.EQ(t1.C(dependency.FieldDependentPackageVersionID), vulnerablePackage),
 					).
 					// Merge the `SELECT` statement above with the following:
-					UnionAll(
+					Union(
 						// A `SELECT` statement that produces additional rows and recurses by referring
 						// to the CTE name (e.g. "package"), and ends when there are no more new rows.
 						sql.Select(t2.Columns(dependency.Columns...)...).
 							From(t2).
 							Join(with).
-							On(t2.C(dependency.FieldDependentPackageVersionID), with.C(dependency.FieldPackageID)),
+							On(t2.C(dependency.FieldDependentPackageVersionID), with.C(dependency.FieldPackageID)).
+							// https://issues.redhat.com/browse/TC-2280
+							// select only the packages that has no SBOM attached so that, once the analysis arrives to a package with an SBOM,
+							// that package marks the end of the recursion to avoid the problem with circular dependencies
+							LeftJoin(sql.Table(billofmaterials.Table).As(billofmaterials.Table)).
+							On(t2.C(dependency.FieldDependentPackageVersionID), sql.Table(billofmaterials.Table).C(billofmaterials.FieldPackageID)).
+							Where(sql.IsNull(sql.Table(billofmaterials.Table).C(billofmaterials.FieldID))),
 					),
 			)
 			// Join the root `SELECT` query with the CTE result (`WITH` clause).

@@ -556,3 +556,64 @@ query TC_2220_find_product_by_cve {
     }
   }
 }
+
+mutation TC_2280_OSV_CVE_vulnerability{
+  ingestVulnerability (
+    vuln: {
+      vulnerabilityInput : {
+        type: "osv"
+        vulnerabilityID: "CVE-2022-1471"
+      }
+    }
+  ){vulnerabilityNodeID}
+}
+
+mutation TC_2280_OSV_CVE_certify_vuln {
+  ingestCertifyVuln(
+    pkg: {
+      packageInput: {
+        type: "maven"
+        namespace: "org.yaml"
+        name: "snakeyaml"
+        version: "1.23"
+        qualifiers: [{
+          key: "classifier"
+          value: "android"
+        },{
+          key: "type"
+          value: "jar"
+        }]
+      }
+    }
+    vulnerability: {
+      vulnerabilityInput: {
+        type: "osv"
+        vulnerabilityID: "CVE-2022-1471"
+      }
+    }
+    certifyVuln: {
+      timeScanned: "2024-07-30T22:02:21.999999999Z"
+      dbUri: "test"
+      dbVersion: "0.0.0"
+      scannerUri: "test"
+      scannerVersion: "0.0.0"
+      origin: "test"
+      collector: "test"
+      documentRef: "test"
+    }
+  )
+}
+
+query TC_2280_find_product_by_cve {
+  findTopLevelPackagesRelatedToVulnerability (vulnerabilityID: "CVE-2022-1471") {
+    ... on CertifyVuln {
+      ...allCertifyVulnTree
+    }
+    ... on Package {
+      ...allPkgTree
+    }
+    ... on IsDependency {
+      ...allIsDependencyTree
+    }
+  }
+}

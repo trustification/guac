@@ -1,0 +1,162 @@
+[
+  {
+    "package": {
+      "type": "maven",
+      "namespaces": [
+        {
+          "namespace": "org.yaml",
+          "names": [
+            {
+              "name": "snakeyaml",
+              "versions": [
+                {
+                  "version": "1.23",
+                  "qualifiers": [
+                    {
+                      "key": "classifier",
+                      "value": "android"
+                    },
+                    {
+                      "key": "type",
+                      "value": "jar"
+                    }
+                  ],
+                  "subpath": ""
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "vulnerability": {
+      "type": "osv",
+      "vulnerabilityIDs": [
+        {
+          "vulnerabilityID": "cve-2022-1471"
+        }
+      ]
+    },
+    "metadata": {
+      "dbUri": "test",
+      "dbVersion": "0.0.0",
+      "scannerUri": "test",
+      "scannerVersion": "0.0.0",
+      "timeScanned": "2024-07-30T22:02:22Z",
+      "collector": "test"
+    }
+  },
+  {
+    "type": "maven",
+    "namespaces": [
+      {
+        "namespace": "org.yaml",
+        "names": [
+          {
+            "name": "snakeyaml",
+            "versions": [
+              {
+                "version": "1.23",
+                "qualifiers": [
+                  {
+                    "key": "classifier",
+                    "value": "android"
+                  },
+                  {
+                    "key": "type",
+                    "value": "jar"
+                  }
+                ],
+                "subpath": ""
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "justification": "top-level package GUAC heuristic connecting to each file/package",
+    "versionRange": "1.23",
+    "package": {
+      "type": "maven",
+      "namespaces": [
+        {
+          "namespace": "org.apache.camel.springboot.example",
+          "names": [
+            {
+              "name": "examples",
+              "versions": [
+                {
+                  "version": "4.8.0.redhat-00001",
+                  "qualifiers": [
+                    {
+                      "key": "type",
+                      "value": "pom"
+                    }
+                  ],
+                  "subpath": ""
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "dependencyPackage": {
+      "type": "maven",
+      "namespaces": [
+        {
+          "namespace": "org.yaml",
+          "names": [
+            {
+              "name": "snakeyaml",
+              "versions": [
+                {
+                  "version": "1.23",
+                  "qualifiers": [
+                    {
+                      "key": "classifier",
+                      "value": "android"
+                    },
+                    {
+                      "key": "type",
+                      "value": "jar"
+                    }
+                  ],
+                  "subpath": ""
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "collector": "FileCollector"
+  },
+  {
+    "type": "maven",
+    "namespaces": [
+      {
+        "namespace": "org.apache.camel.springboot.example",
+        "names": [
+          {
+            "name": "examples",
+            "versions": [
+              {
+                "version": "4.8.0.redhat-00001",
+                "qualifiers": [
+                  {
+                    "key": "type",
+                    "value": "pom"
+                  }
+                ],
+                "subpath": ""
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+]

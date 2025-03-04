@@ -182,4 +182,13 @@ echo @@@@ Running TC-2220 queries
 cat "$queries" | gql-cli http://localhost:8080/query -o TC_2220_find_product_by_cve | jq 'del(.. | .id?) | del(.. | .origin?) | .findTopLevelPackagesRelatedToVulnerability[] ' > "${GUAC_DIR}/gotTC_2220_FindProductByCVE.json"
 diff -u "${SCRIPT_DIR}/expectTC_2220_FindProductByCVE.json" "${GUAC_DIR}/gotTC_2220_FindProductByCVE.json"
 
+echo @@@@ Ingesting data for TC-2280
+time go run ./cmd/guacone collect files ${GUAC_DIR}/internal/testing/testdata/exampledata/TC-2280_example-slim.cdx.json;
+cat "$queries" | gql-cli http://localhost:8080/query -o TC_2280_OSV_CVE_vulnerability
+cat "$queries" | gql-cli http://localhost:8080/query -o TC_2280_OSV_CVE_certify_vuln
+
+echo @@@@ Running TC-2280 queries
+cat "$queries" | gql-cli http://localhost:8080/query -o TC_2280_find_product_by_cve | jq 'del(.. | .id?) | del(.. | .origin?) | .findTopLevelPackagesRelatedToVulnerability[] ' > "${GUAC_DIR}/gotTC_2280_FindProductByCVE.json"
+diff -u "${SCRIPT_DIR}/expectTC_2280_FindProductByCVE.json" "${GUAC_DIR}/gotTC_2280_FindProductByCVE.json"
+
 # Note: graphql_playground is left running, CI will clean it up
