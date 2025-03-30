@@ -1,6 +1,8 @@
 module github.com/guacsec/guac
 
-go 1.22.8
+go 1.23.4
+
+toolchain go1.23.7
 
 require (
 	cloud.google.com/go/storage v1.43.0
@@ -52,7 +54,7 @@ require (
 	dario.cat/mergo v1.0.0 // indirect
 	deps.dev/util/maven v0.0.0-20240807013505-16da96fe8b66 // indirect
 	deps.dev/util/resolve v0.0.0-20240807013505-16da96fe8b66 // indirect
-	deps.dev/util/semver v0.0.0-20240807013505-16da96fe8b66 // indirect
+	deps.dev/util/semver v0.0.0-20250328015204-fc8680254d3f // indirect
 	github.com/Azure/azure-amqp-common-go/v3 v3.2.3 // indirect
 	github.com/Azure/azure-sdk-for-go/sdk/azcore v1.14.0 // indirect
 	github.com/Azure/azure-sdk-for-go/sdk/azidentity v1.7.0 // indirect
