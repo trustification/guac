@@ -252,6 +252,6 @@ require (
 	github.com/spf13/viper v1.18.2
 	github.com/stretchr/testify v1.9.0
 	github.com/vektah/gqlparser/v2 v2.5.14
-	golang.org/x/exp v0.0.0-20231006140011-7918f672742d
+	golang.org/x/exp ce4c2cf36ca6
 	gopkg.in/yaml.v3 v3.0.1
 )
