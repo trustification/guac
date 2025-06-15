@@ -203,7 +203,7 @@ require (
 	github.com/prometheus/client_model v0.5.0 // indirect
 	github.com/prometheus/common v0.48.0 // indirect
 	github.com/prometheus/procfs v0.12.0 // indirect
-	github.com/rabbitmq/amqp091-go v1.9.0 // indirect
+	github.com/rabbitmq/amqp091-go v1.10.0 // indirect
 	github.com/rcrowley/go-metrics v0.0.0-20201227073835-cf1acfcdf475 // indirect
 	github.com/remyoudompheng/bigfft v0.0.0-20200410134404-eec4a21b6bb0 // indirect
 	github.com/rhysd/actionlint v1.6.26 // indirect
