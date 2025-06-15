@@ -27,8 +27,8 @@ deps.dev/util/maven v0.0.0-20240807013505-16da96fe8b66 h1:Lms2UF1xl3hkZQk+Z0SXQo
 deps.dev/util/maven v0.0.0-20240807013505-16da96fe8b66/go.mod h1:SBW3EribdkZYk6zxi5oVn/ZECvi4ixb7EGgEWfSimNk=
 deps.dev/util/resolve v0.0.0-20240807013505-16da96fe8b66 h1:MlUSIkr1T0TCj8iOfaCCtuHFT2YvunLkjidOEijQLDg=
 deps.dev/util/resolve v0.0.0-20240807013505-16da96fe8b66/go.mod h1:XXi6yRYqhtxw5DvGX/mbG6fHSLn8OgoPowNd8EAxDgk=
-deps.dev/util/semver v0.0.0-20240807013505-16da96fe8b66 h1:gTFfMlqqR9jkLEVtLbxoeZxpav4hLTHL67aWgJglKVs=
-deps.dev/util/semver v0.0.0-20240807013505-16da96fe8b66/go.mod h1:jkcH+k02gWHBiZ7G4OnUOkSZ6WDq54Pt5DrOA8FN8Uo=
+deps.dev/util/semver v0.0.0-20250610062038-1c74ed268106 h1:+95d8F30KTWCYeXhTruCdI1fTI8CvzsC6kpNKt/rRo8=
+deps.dev/util/semver v0.0.0-20250610062038-1c74ed268106/go.mod h1:jjJweVqtuMQ7Q4zlTQ/kCHpboojkRvpMYlhy/c93DVU=
 entgo.io/contrib v0.5.0 h1:M4IqodImfUm327RDwNAITLNz3PsxVeC3rD4DPeVA8Gs=
 entgo.io/contrib v0.5.0/go.mod h1:q8dXQCmzqpSlVdT2bWDydjgznGcy3y4zmsYmVFC9V/U=
 entgo.io/ent v0.13.0 h1:DclxWczaCpyiKn6ZWVcJjq1zIKtJ11iNKy+08lNYsJE=
