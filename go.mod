@@ -49,7 +49,7 @@ require (
 	cloud.google.com/go/auth v0.8.1 // indirect
 	cloud.google.com/go/auth/oauth2adapt v0.2.4 // indirect
 	cloud.google.com/go/compute/metadata v0.5.0 // indirect
-	dario.cat/mergo v1.0.0 // indirect
+	dario.cat/mergo v1.0.2 // indirect
 	deps.dev/util/maven v0.0.0-20240807013505-16da96fe8b66 // indirect
 	deps.dev/util/resolve v0.0.0-20240807013505-16da96fe8b66 // indirect
 	deps.dev/util/semver v0.0.0-20240807013505-16da96fe8b66 // indirect
