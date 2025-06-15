@@ -220,7 +220,7 @@ require (
 	github.com/skeema/knownhosts v1.3.0 // indirect
 	github.com/sosodev/duration v1.2.0 // indirect
 	github.com/sourcegraph/conc v0.3.0 // indirect
-	github.com/spdx/gordf v0.0.0-20221230105357-b735bd5aac89 // indirect
+	github.com/spdx/gordf v0.0.0-20250128162952-000978ccd6fb // indirect
 	github.com/spf13/afero v1.11.0 // indirect
 	github.com/spf13/cast v1.6.0 // indirect
 	github.com/subosito/gotenv v1.6.0 // indirect
