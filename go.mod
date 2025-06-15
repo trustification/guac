@@ -1,6 +1,8 @@
 module github.com/guacsec/guac
 
-go 1.21
+go 1.22
+
+toolchain go1.23.9
 
 require (
 	cloud.google.com/go/storage v1.36.0
@@ -102,7 +104,7 @@ require (
 	github.com/go-logr/stdr v1.2.2 // indirect
 	github.com/go-openapi/inflect v0.19.0 // indirect
 	github.com/goark/errs v1.3.2 // indirect
-	github.com/goark/go-cvss v1.6.6 // indirect
+	github.com/goark/go-cvss v1.6.7 // indirect
 	github.com/gogo/protobuf v1.3.2 // indirect
 	github.com/golang-jwt/jwt/v4 v4.5.0 // indirect
 	github.com/google/go-containerregistry v0.17.0 // indirect
