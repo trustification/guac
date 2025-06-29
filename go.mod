@@ -104,7 +104,7 @@ require (
 	github.com/goark/errs v1.3.2 // indirect
 	github.com/goark/go-cvss v1.6.6 // indirect
 	github.com/gogo/protobuf v1.3.2 // indirect
-	github.com/golang-jwt/jwt/v4 v4.5.0 // indirect
+	github.com/golang-jwt/jwt/v4 v4.5.2 // indirect
 	github.com/google/go-containerregistry v0.17.0 // indirect
 	github.com/google/go-github/v53 v53.2.0 // indirect
 	github.com/google/go-github/v56 v56.0.0 // indirect
