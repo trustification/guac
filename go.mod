@@ -211,7 +211,7 @@ require (
 	entgo.io/ent v0.12.4
 	github.com/99designs/gqlgen v0.17.37
 	github.com/CycloneDX/cyclonedx-go v0.8.0
-	github.com/DATA-DOG/go-txdb v0.1.8
+	github.com/DATA-DOG/go-txdb v0.2.1
 	github.com/Khan/genqlient v0.6.0
 	github.com/Masterminds/semver v1.5.0
 	github.com/arangodb/go-driver v1.6.1
