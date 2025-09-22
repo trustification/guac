@@ -16,7 +16,8 @@ LABEL description="Trustification-Guac"
 LABEL io.k8s.description ="Trustification-Guac"
 LABEL io.k8s.display-name ="Trustification-Guac"
 LABEL io.openshift.tags ="Trustification-Guac"
-LABEL name ="Trustification-Guac"
+LABEL name ="rhtpa/rhtpa-guac-rhel9"
+LABEL cpe ="cpe:/a:redhat:trusted_profile_analyzer:1.3::el9"
 LABEL summary ="Trustification-Guac"
 
 RUN microdnf install -y tar gzip
