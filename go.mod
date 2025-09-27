@@ -41,7 +41,7 @@ require (
 	golang.org/x/xerrors v0.0.0-20240716161551-93cc26a95ae9 // indirect
 	google.golang.org/genproto v0.0.0-20240812133136-8ffd90a71988 // indirect
 	google.golang.org/grpc v1.67.1
-	google.golang.org/protobuf v1.34.2
+	google.golang.org/protobuf v1.35.2
 )
 
 require (
@@ -70,8 +70,8 @@ require (
 	github.com/ProtonMail/go-crypto v1.1.3 // indirect
 	github.com/agext/levenshtein v1.2.3 // indirect
 	github.com/agnivade/levenshtein v1.1.1 // indirect
-	github.com/alexflint/go-arg v1.4.2 // indirect
-	github.com/alexflint/go-scalar v1.0.0 // indirect
+	github.com/alexflint/go-arg v1.5.1 // indirect
+	github.com/alexflint/go-scalar v1.2.0 // indirect
 	github.com/anchore/go-struct-converter v0.0.0-20230627203149-c72ef8859ca9 // indirect
 	github.com/apapsch/go-jsonmerge/v2 v2.0.0 // indirect
 	github.com/apparentlymart/go-textseg/v13 v13.0.0 // indirect
@@ -93,6 +93,7 @@ require (
 	github.com/aws/aws-sdk-go-v2/service/sts v1.30.3 // indirect
 	github.com/aws/smithy-go v1.20.3 // indirect
 	github.com/beorn7/perks v1.0.1 // indirect
+	github.com/bmatcuk/doublestar/v4 v4.6.1 // indirect
 	github.com/bombsimon/logrusr/v2 v2.0.1 // indirect
 	github.com/bradleyfalzon/ghinstallation/v2 v2.8.0 // indirect
 	github.com/caarlos0/env/v6 v6.10.1 // indirect
@@ -105,7 +106,7 @@ require (
 	github.com/containerd/typeurl/v2 v2.1.1 // indirect
 	github.com/coreos/go-semver v0.3.1 // indirect
 	github.com/coreos/go-systemd/v22 v22.5.0 // indirect
-	github.com/cpuguy83/go-md2man/v2 v2.0.4 // indirect
+	github.com/cpuguy83/go-md2man/v2 v2.0.5 // indirect
 	github.com/cyphar/filepath-securejoin v0.3.6 // indirect
 	github.com/cznic/mathutil v0.0.0-20181122101859-297441e03548 // indirect
 	github.com/davecgh/go-spew v1.1.2-0.20180830191138-d8f796af33cc // indirect
@@ -132,6 +133,7 @@ require (
 	github.com/go-playground/locales v0.14.1 // indirect
 	github.com/go-playground/universal-translator v0.18.1 // indirect
 	github.com/go-playground/validator/v10 v10.14.1 // indirect
+	github.com/go-viper/mapstructure/v2 v2.2.1 // indirect
 	github.com/gogo/protobuf v1.3.2 // indirect
 	github.com/golang-jwt/jwt/v4 v4.5.0 // indirect
 	github.com/golang-jwt/jwt/v5 v5.2.1 // indirect
@@ -167,7 +169,7 @@ require (
 	github.com/kylelemons/godebug v1.1.0 // indirect
 	github.com/leodido/go-urn v1.2.4 // indirect
 	github.com/letsencrypt/boulder v0.0.0-20230907030200-6d76a0f91e1e // indirect
-	github.com/logrusorgru/aurora/v3 v3.0.0 // indirect
+	github.com/logrusorgru/aurora/v4 v4.0.0 // indirect
 	github.com/magiconair/properties v1.8.7 // indirect
 	github.com/mailru/easyjson v0.7.7 // indirect
 	github.com/mattn/go-colorable v0.1.13 // indirect
@@ -218,7 +220,7 @@ require (
 	github.com/shurcooL/graphql v0.0.0-20200928012149-18c5c3165e3a // indirect
 	github.com/sirupsen/logrus v1.9.3 // indirect
 	github.com/skeema/knownhosts v1.3.0 // indirect
-	github.com/sosodev/duration v1.2.0 // indirect
+	github.com/sosodev/duration v1.3.1 // indirect
 	github.com/sourcegraph/conc v0.3.0 // indirect
 	github.com/spdx/gordf v0.0.0-20221230105357-b735bd5aac89 // indirect
 	github.com/spf13/afero v1.11.0 // indirect
@@ -232,7 +234,7 @@ require (
 	github.com/titanous/rocacheck v0.0.0-20171023193734-afe73141d399 // indirect
 	github.com/twmb/murmur3 v1.1.3 // indirect
 	github.com/ulikunitz/xz v0.5.12 // indirect
-	github.com/urfave/cli/v2 v2.27.4 // indirect
+	github.com/urfave/cli/v2 v2.27.5 // indirect
 	github.com/vbatts/tar-split v0.11.5 // indirect
 	github.com/vmihailenco/msgpack/v5 v5.3.5 // indirect
 	github.com/vmihailenco/tagparser/v2 v2.0.0 // indirect
@@ -273,9 +275,9 @@ require (
 	deps.dev/api/v3 v3.0.0-20240807013505-16da96fe8b66
 	entgo.io/contrib v0.5.0
 	entgo.io/ent v0.13.0
-	github.com/99designs/gqlgen v0.17.45
+	github.com/99designs/gqlgen v0.17.57
 	github.com/CycloneDX/cyclonedx-go v0.9.0
-	github.com/Khan/genqlient v0.7.0
+	github.com/Khan/genqlient v0.8.1
 	github.com/Masterminds/semver v1.5.0
 	github.com/ProtonMail/gluon v0.17.0
 	github.com/arangodb/go-driver v1.6.2
@@ -324,7 +326,7 @@ require (
 	github.com/spf13/viper v1.19.0
 	github.com/stretchr/testify v1.10.0
 	github.com/tikv/client-go/v2 v2.0.8-0.20231115083414-7c96dfd783fb
-	github.com/vektah/gqlparser/v2 v2.5.17
+	github.com/vektah/gqlparser/v2 v2.5.19
 	go.uber.org/mock v0.4.0
 	gocloud.dev v0.39.0
 	gocloud.dev/pubsub/kafkapubsub v0.37.0
