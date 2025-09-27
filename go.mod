@@ -322,7 +322,7 @@ require (
 	github.com/sigstore/sigstore v1.8.3
 	github.com/spdx/tools-golang v0.5.5
 	github.com/spf13/viper v1.19.0
-	github.com/stretchr/testify v1.10.0
+	github.com/stretchr/testify v1.11.1
 	github.com/tikv/client-go/v2 v2.0.8-0.20231115083414-7c96dfd783fb
 	github.com/vektah/gqlparser/v2 v2.5.17
 	go.uber.org/mock v0.4.0
