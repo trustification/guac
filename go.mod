@@ -287,7 +287,7 @@ require (
 	github.com/aws/aws-sdk-go-v2/service/sqs v1.34.3
 	github.com/cdevents/sdk-go v0.3.2
 	github.com/cloudevents/sdk-go/v2 v2.15.2
-	github.com/deepmap/oapi-codegen/v2 v2.1.0
+	github.com/deepmap/oapi-codegen/v2 v2.5.1
 	github.com/fsnotify/fsnotify v1.7.0
 	github.com/getkin/kin-openapi v0.123.0
 	github.com/go-chi/chi v4.1.2+incompatible
