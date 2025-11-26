@@ -1,6 +1,6 @@
 module github.com/guacsec/guac
 
-go 1.21
+go 1.22.0
 
 require (
 	cloud.google.com/go/storage v1.36.0
@@ -82,7 +82,7 @@ require (
 	github.com/caarlos0/env/v6 v6.10.1 // indirect
 	github.com/cespare/xxhash/v2 v2.2.0 // indirect
 	github.com/chzyer/readline v1.5.1 // indirect
-	github.com/cloudflare/circl v1.3.7 // indirect
+	github.com/cloudflare/circl v1.6.1 // indirect
 	github.com/common-nighthawk/go-figure v0.0.0-20210622060536-734e95fb86be // indirect
 	github.com/containerd/stargz-snapshotter/estargz v0.14.3 // indirect
 	github.com/containerd/typeurl/v2 v2.1.1 // indirect
