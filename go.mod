@@ -1,6 +1,6 @@
 module github.com/guacsec/guac
 
-go 1.21
+go 1.24.0
 
 require (
 	cloud.google.com/go/storage v1.36.0
@@ -21,7 +21,7 @@ require (
 	github.com/felixge/httpsnoop v1.0.4 // indirect
 	github.com/golang/groupcache v0.0.0-20210331224755-41bb18bfe9da // indirect
 	github.com/golang/protobuf v1.5.3 // indirect
-	github.com/google/go-cmp v0.6.0
+	github.com/google/go-cmp v0.7.0
 	github.com/google/uuid v1.5.0 // indirect
 	github.com/googleapis/enterprise-certificate-proxy v0.3.2 // indirect
 	github.com/googleapis/gax-go/v2 v2.12.0 // indirect
@@ -36,8 +36,8 @@ require (
 	golang.org/x/crypto v0.21.0 // indirect
 	golang.org/x/net v0.23.0 // indirect
 	golang.org/x/oauth2 v0.16.0
-	golang.org/x/sync v0.6.0
-	golang.org/x/sys v0.18.0 // indirect
+	golang.org/x/sync v0.17.0
+	golang.org/x/sys v0.37.0 // indirect
 	golang.org/x/text v0.14.0 // indirect
 	golang.org/x/xerrors v0.0.0-20231012003039-104605ab7028 // indirect
 	google.golang.org/appengine v1.6.8 // indirect
@@ -153,7 +153,7 @@ require (
 	github.com/pmezard/go-difflib v1.0.1-0.20181226105442-5d4384ee4fb2 // indirect
 	github.com/prometheus/client_model v0.5.0 // indirect
 	github.com/prometheus/common v0.45.0 // indirect
-	github.com/prometheus/procfs v0.12.0 // indirect
+	github.com/prometheus/procfs v0.19.2 // indirect
 	github.com/rhysd/actionlint v1.6.26 // indirect
 	github.com/rivo/uniseg v0.4.4 // indirect
 	github.com/robfig/cron/v3 v3.0.1 // indirect
