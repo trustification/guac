@@ -214,7 +214,7 @@ require (
 	github.com/DATA-DOG/go-txdb v0.1.8
 	github.com/Khan/genqlient v0.6.0
 	github.com/Masterminds/semver v1.5.0
-	github.com/arangodb/go-driver v1.6.1
+	github.com/arangodb/go-driver/v2 v2.1.6
 	github.com/aws/aws-sdk-go v1.49.17
 	github.com/aws/aws-sdk-go-v2 v1.24.1
 	github.com/aws/aws-sdk-go-v2/config v1.26.6
