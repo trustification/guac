@@ -1,6 +1,6 @@
 module github.com/guacsec/guac
 
-go 1.21
+go 1.24.0
 
 require (
 	cloud.google.com/go/storage v1.36.0
@@ -15,7 +15,6 @@ require (
 
 require (
 	cloud.google.com/go v0.111.0 // indirect
-	cloud.google.com/go/compute v1.23.3 // indirect
 	cloud.google.com/go/iam v1.1.5 // indirect
 	cloud.google.com/go/pubsub v1.33.0 // indirect
 	github.com/felixge/httpsnoop v1.0.4 // indirect
@@ -35,12 +34,11 @@ require (
 	go.uber.org/multierr v1.11.0 // indirect
 	golang.org/x/crypto v0.21.0 // indirect
 	golang.org/x/net v0.23.0 // indirect
-	golang.org/x/oauth2 v0.16.0
+	golang.org/x/oauth2 v0.34.0
 	golang.org/x/sync v0.6.0
 	golang.org/x/sys v0.18.0 // indirect
 	golang.org/x/text v0.14.0 // indirect
 	golang.org/x/xerrors v0.0.0-20231012003039-104605ab7028 // indirect
-	google.golang.org/appengine v1.6.8 // indirect
 	google.golang.org/genproto v0.0.0-20240102182953-50ed04b92917 // indirect
 	google.golang.org/grpc v1.60.1
 	google.golang.org/protobuf v1.33.0
@@ -48,7 +46,7 @@ require (
 
 require (
 	ariga.io/atlas v0.14.1-0.20230918065911-83ad451a4935 // indirect
-	cloud.google.com/go/compute/metadata v0.2.3 // indirect
+	cloud.google.com/go/compute/metadata v0.3.0 // indirect
 	dario.cat/mergo v1.0.0 // indirect
 	github.com/BurntSushi/toml v1.3.2 // indirect
 	github.com/Masterminds/semver/v3 v3.2.1 // indirect
